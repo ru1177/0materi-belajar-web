@@ -54,7 +54,7 @@ footer {
     justify-content: space-between;
 }
 
-.moduls div:nth-child(1) {
+.nav-list {
     position: fixed;
     top: 0;
     left: 0;
@@ -75,10 +75,6 @@ footer {
     line-height: 30px;
 }
 
-.moduls div:nth-child(1) a:active {
-    color: red;
-}
-
 .moduls div:nth-child(1) a:hover {
     color: #0dcaf0;
 }
@@ -89,4 +85,37 @@ footer {
     right: 0;
     padding: 3em 4em 4em 0;
     width: 65%;
+}
+
+.btn-link {
+    display: block;
+    padding: 0.3em;
+    border: none;
+    background-color: #0d6efd;
+    border-radius: 5px;
+    position: absolute;
+    margin: 1em;
+    z-index: 2;
+}
+
+@media (max-width: 685px) {
+    .nav-list {
+        left: -100%;
+        transition: 0.3s;
+    }
+
+    .geser {
+        left: 0;
+    }
+
+    .moduls div:nth-child(2) {
+        position: static;
+    }
+
+}
+
+@media (min-width: 685px) {
+    .btn-link {
+        display: none;
+    }
 }
