@@ -1,0 +1,92 @@
+* {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    min-height: 100vh;
+}
+
+li>* {
+    text-transform: capitalize;
+
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    line-height: 60px;
+    text-transform: capitalize;
+}
+
+.list-moduls li {
+    list-style: none;
+    background-color: #0d6efd;
+    padding: 1em;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.list-moduls a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+
+/* materi.ejs */
+.container p {
+    margin-left: 1em;
+}
+
+.moduls {
+    position: relative;
+    width: 100%;
+    /* border: 1px solid salmon; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.moduls div:nth-child(1) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 3em 3em 3em 1em;
+    /* border: 1px solid salmon; */
+    box-sizing: border-box;
+}
+
+.moduls div:nth-child(1) li:nth-child(1) {
+    padding: .5em;
+    background-color: #0d6efd;
+    border-radius: 10px;
+}
+
+.moduls div:nth-child(1) a {
+    color: white;
+    line-height: 30px;
+}
+
+.moduls div:nth-child(1) a:active {
+    color: red;
+}
+
+.moduls div:nth-child(1) a:hover {
+    color: #0dcaf0;
+}
+
+.moduls div:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 3em 4em 4em 0;
+    width: 65%;
+}
